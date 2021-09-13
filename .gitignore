@@ -1,0 +1,5 @@
+fortivpn.conf
+home/*
+!home/.fluxbox
+home/.fluxbox/*
+!home/.fluxbox/menu

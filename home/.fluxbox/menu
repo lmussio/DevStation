@@ -1,0 +1,7 @@
+[begin] (DevStation)
+    [exec] (VPN) {x-terminal-emulator -T "Bash" -e shell sudo openfortivpn} <>
+    [exec] (Chrome) {google-chrome} <>
+    [submenu] (fluxbox) {}
+        [include] (/etc/X11/fluxbox/fluxbox-menu)
+    [end]
+[end]

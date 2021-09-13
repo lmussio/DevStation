@@ -1,0 +1,4 @@
+host = your.fortivpnserver.com
+port = 10443
+username = your.user
+trusted-cert = d99984089909abc9088acbacb980909879876987def127863798978
