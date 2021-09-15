@@ -7,6 +7,7 @@ readonly G_LOG_W='[WARN]'
 readonly G_LOG_E='[ERROR]'
 
 main() {
+    sudo chown -R apps:apps /home/apps
     launch_xvfb
     launch_window_manager
     run_vnc_server

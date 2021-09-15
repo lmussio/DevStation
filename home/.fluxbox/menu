@@ -1,6 +1,11 @@
 [begin] (DevStation)
-    [exec] (VPN) {x-terminal-emulator -T "Bash" -e shell sudo openfortivpn} <>
-    [exec] (Chrome) {google-chrome} <>
+    [submenu] (Tools) {}
+        [exec] (FortiVPN) {x-terminal-emulator -T "Bash" -e shell sudo openfortivpn} <>
+        [exec] (Start SSH Server) {sudo /usr/sbin/sshd -D} <>
+    [end]
+    [submenu] (Browsers) {}
+        [exec] (Chrome) {google-chrome --disable-gpu --no-sandbox --disable-dev-shm-usage} <>
+    [end]
     [submenu] (fluxbox) {}
         [include] (/etc/X11/fluxbox/fluxbox-menu)
     [end]

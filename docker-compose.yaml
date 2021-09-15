@@ -3,6 +3,7 @@ services:
   devstation:
     build: .
     ports:
+      - "22:22"
       - "5900:5900"
     restart: always
     networks:
@@ -16,6 +17,9 @@ services:
       VNC_SERVER_PASSWORD: Change123!
     volumes:
       - ./home:/home/apps
+      - type: bind
+        source: ./fortivpn.conf
+        target: /etc/openfortivpn/config
     # mem_limit: "512m"
     # memswap_limit: "512m"
     # cpus: 0.5
